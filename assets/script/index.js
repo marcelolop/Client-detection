@@ -43,6 +43,10 @@ function getOperatingSystemName() {
     osName = "MacOS";
   } else if (userAgent.includes("Linux")) {
     osName = "Linux";
+  } else if (userAgent.includes("Android")) {
+    osName = "Android";
+  } else if (userAgent.includes("iOS")) {
+    osName = "iOS";
   }
   return `Current OS: ${osName}`;
 }
