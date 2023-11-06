@@ -26,7 +26,7 @@ section {
     width: 400px;
     height: min-content;
     border: #26232B 2px solid;
-    margin: 40px 0;
+    margin: 10px 0;
     border-radius: 10px;
 }
 
@@ -41,13 +41,24 @@ h3 {
     margin: 10px;
 }
 
-button {
+.online-offline-btn {
     height: 60px;
     width: 400px;
+    margin-top: 10px;
     border-radius: 10px;
     border: none;
     background-color: var(--app-online-offline-btn-background);
     color: var(--app-button-text-color);
+    font-size: 20px;
+    font-weight: 600;
     text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 400px) {
+    section {
+        width: 100%;
+    }
 }
 
