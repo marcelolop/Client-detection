@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+:root {
+    --app-body-background-color: #191720;
+    --app-online-offline-btn-background: #47fd60;
+    --app-button-text-color: #ffffff;
+}
+
+body {
+    background-color: var(--app-body-background-color);
+    font-family: "Nunito sans", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.display-grid {
+    display: grid;
+    place-items: center;
+}
+
+section {
+    width: 400px;
+    height: min-content;
+    border: #26232B 2px solid;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.box-headers {
+    color: #ffffff;
+    text-align: center;
+    background-color: #26232B;
+}
+
+h3 {
+    color: #ffffff;
+    margin: 10px;
+}
+
+button {
+    height: 60px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--app-online-offline-btn-background);
+    color: var(--app-button-text-color);
+    text-align: center;
+}
+
